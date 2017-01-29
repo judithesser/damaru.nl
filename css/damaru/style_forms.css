@@ -1,0 +1,14 @@
+/* cascading style sheet for vuurplaats */
+/* copyright Vuurplaats (Lode), 2006-2007 */
+/* special styles for forms for browsers that support styling forms in a nice way */
+
+/* change some of the default colors */
+/*
+fieldset.border {
+	border-color: #28F;
+}
+fieldset h1, fieldset h2, fieldset h3, fieldset h4, fieldset h5, fieldset h6,
+fieldset.table h1, fieldset.table h2, fieldset.table h3, fieldset.table h4, fieldset.table h5, fieldset.table h6 {
+	border-color: #28F;
+}
+*/

@@ -1,0 +1,28 @@
+/* cascading style sheet for vuurplaats */
+/* copyright Vuurplaats (Lode), 2006-2007 */
+
+/* create nice colors for links */
+a, a:link { color: #80A7D1; }
+a:visited { color: #80A7D1; } /* ACC5E1 */
+a:hover, a:focus { color: #80A7D1; text-decoration: none; }
+  a.none:hover, a.none:focus { color: #F52; }
+a:active { color: #28F; }
+
+/* give headers nice colors too */
+h1, h2, h3, h4, h5, h6 {
+	color: #80A7D1;
+}
+/* undo the :hover:after of the header ids */
+h3[id]:hover:after, h4[id]:hover:after, h5[id]:hover:after, h6[id]:hover:after {
+	content: '';
+}
+
+/* change the default icon color */
+/*
+.icon {
+  background-color: #28F;
+}
+#right .icon {
+  background-color: #F82;
+}
+*/

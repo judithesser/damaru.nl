@@ -1,0 +1,17 @@
+/* cascading style sheet for vuurplaats */
+/* copyright Vuurplaats (Lode), 2006-2007 */
+
+/* don't make the image description so small */
+.bbc-img-desc {
+	font-size: small;
+}
+
+/* don't create a border around images */
+.bbc-img {
+	border-width: 0;
+}
+
+/* no margin-bottom is applied to headers when there's an image following */
+.bbc-h {
+	margin-bottom: 1em;
+}

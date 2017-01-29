@@ -1,0 +1,190 @@
+/* cascading style sheet for Noumeno */
+/* copyright Noumeno (Lode, Jaap) */
+
+/* mostly without any colors, so any website can use the styles with ease */
+
+/* return to normal */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* basic elements */
+	body {
+	  position: static;
+	  font: medium Verdana, sans-serif, helvetica;
+	  color: #000;
+	  background-color: #FFF;
+	}
+	a img {
+	  border-width: 0;
+	}
+	code {
+		font-size: 1.3em;
+	}
+	
+	/* fix the headers */
+	h1 { font-size: 2em; }
+	h2 { font-size: 1.5em; }
+	h3 { font-size: 1.125em; }
+	h4 { font-size: 1em; }
+	h5 { font-size: 0.85em; }
+	h6 { font-size: 0.7em; }
+	/* give the headers in the text with id an :hover:after */
+	h3[id]:hover:after, h4[id]:hover:after, h5[id]:hover:after, h6[id]:hover:after {
+		content: " #"attr(id);
+		color: #AAA;
+		font-size: x-small;
+		font-weight: normal;
+	}
+
+	/* link styles */
+	a, a:link { text-decoration: none; }
+	a:visited { text-decoration: none; }
+	a:hover, a:focus { text-decoration: underline; }
+	  a.none:hover, a.none:focus { text-decoration: none; }
+	a:active { text-decoration: underline; }
+	  a.error, a.error:link { text-decoration: line-through; }
+	  a.error:visited { text-decoration: line-through; }
+	  a.error:hover, a.error:focus { text-decoration: underline; }
+	  a.error:active { text-decoration: underline; }
+
+	/* lists */
+	ul { margin-left: 1.5em; }
+	ol { margin-left: 2.5em; }
+	ul.owncss { margin: 0; }
+	ol.owncss { margin: 0; }
+	ul li { list-style-type: circle; }
+	ol li { list-style-type: decimal; }
+
+/* tables */
+	table { border: 2px solid #888; }
+	table.noborder { border-width: 0; }
+	table tr.hoverrow:hover { background-color: #DDF; }
+	table th { padding: 0.125em 0.25em; text-align: left; border-bottom: 2px solid #555; background-color: #EEF; }
+	table tr.noborder th { border-width: 0; }
+	table tr.topborder th { border-top: 2px solid #555; border-bottom-width: 0; }
+	table th.row { border-right: 2px solid #555; border-bottom-width: 0; }
+	table th.lite { font-weight: normal; }
+	table th.noborder { border-width: 0; }
+	table td { padding: 0.125em 0.25em; vertical-align: top; border-bottom: 1px solid #AAA; }
+	table tr.noborder td { border-width: 0; }
+	table th.form, table td.form { padding: 0.25em 1em; }
+
+	/* tables, using other css */
+	table.owncss { border-width: 0; }
+	table.owncss tr.hoverrow:hover { background-color: inherit; }
+	table.owncss th { padding: 0; text-align: center; border-width: 0; background-color: inherit; }
+	table.owncss tr.noborder th { border-width: 0; }
+	table.owncss td { padding: 0.; vertical-align: middle; border-width: 0; }
+
+/* basic id's and classes */
+	#jumpto-menu { display: none; }
+	#jumpto-text { display: none; }
+	.current { color: #588; }
+	.displaynone { display: none !important; }
+	.displayblock { display: block !important; }
+	.displayinline { display: inline !important; }
+	.choose-continue { color: #0A0; } /* #238E23 */
+	.choose-cancel { color: #F20; } /* #FF2400 */
+	.level0 { text-indent: 0; }
+	.level1 { text-indent: 10px; }
+	.level2 { text-indent: 20px; }
+	.level3 { text-indent: 30px; }
+	.level4 { text-indent: 40px; }
+	.level5 { text-indent: 50px; }
+	.level6 { text-indent: 60px; }
+	.level7 { text-indent: 70px; }
+	
+	/* warnings */
+	.alert, .fatal {
+		margin: 0.25em;
+		padding: 0.25em;
+		color: #FFF;
+		font-weight: bold;
+		border: 2px outset #F00;
+		background-color: #F00;
+	}
+	.warning {
+		margin: 0.5em 0.25em;
+		padding: 0 0.25em;
+		width: 350px;
+		overflow: hidden;
+		border: 2px solid #F00;
+		border-right-color: #500;
+		border-bottom-color: #500;
+		background-color: #FEE;
+	}
+		.warning * { padding: 0.25em 0; }
+		.warning h4 { border-bottom: 2px solid #A00; }
+	.notice {
+		margin: 0.5em 0.25em;
+		padding: 0 0.25em;
+		width: 350px;
+		overflow: hidden;
+		border: 2px solid #FF0;
+		border-right-color: #550;
+		border-bottom-color: #550;
+		background-color: #FFE;
+	}
+		.notice * { padding: 0.25em 0; }
+		.notice h4 { border-bottom: 2px solid #AA0; }
+	/* warnings in small areas */
+	#right .warning, #right .notice,
+	#blocks .warning, #blocks .notice {
+		width: auto;
+	}
+	
+	/* icons */
+	.icon {
+	  background: #588 url(./images/icon/bg_rounded.gif) no-repeat;
+	}
+	.icon-text {
+	  background: #588 url(./images/icon/bg_rounded.gif) no-repeat;
+		vertical-align: bottom;
+	}
+	table .icon, ul .icon, ol .icon {
+		vertical-align: bottom;
+	}
+	.icon-visitor {
+	  background: #BDD url(./images/icon/bg_rounded.gif) no-repeat;
+	}
+	.icon-member {
+	  background: #588 url(./images/icon/bg_rounded.gif) no-repeat;
+	}
+	.icon-starter {
+	  background: #00A url(./images/icon/bg_rounded.gif) no-repeat;
+	}
+	.icon-moderator {
+	  background: #0A0 url(./images/icon/bg_rounded.gif) no-repeat;
+	}
+	.icon-admin {
+	  background: #A00 url(./images/icon/bg_rounded.gif) no-repeat;
+	}
+	ul.icons {
+		margin: 0;
+	}
+	ul.icons li {
+		list-style: none;
+		margin: 0.5em 0 0;
+	}
+	
+	/* bbcode (for the ease of using this is not only used for bbcoded text) */
+	.bold { font-weight: bold; }
+		.lite { font-weight: normal; } /* for when a default is bold */
+	.italic { font-style: italic; }
+	.underline { text-decoration: underline; }
+	.line-through { text-decoration: line-through; }
+	.quote {
+		margin: 0.5em 0 0.5em 1.5em;
+		padding: 0.25em;
+		border: 1px dotted #AAA;
+	}
+	.quote:before {
+		content: '" ';
+		font-size: 2em;
+	}
+	.quote:after {
+		content: ' "';
+		font-size: 2em;
+	}

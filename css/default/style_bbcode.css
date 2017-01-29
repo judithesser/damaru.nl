@@ -1,0 +1,136 @@
+/* cascading style sheet for Noumeno */
+/* copyright Noumeno (Lode, Jaap) */
+
+/* all bbcode styles */
+
+/* [b] */
+.bbc-b {
+	font-weight: bold;
+}
+/* [i] */
+.bbc-i {
+  font-style: italic;
+}
+/* [u] */
+.bbc-u {
+  text-decoration: underline;
+}
+/* [s] */
+.bbc-s {
+  text-decoration: line-through;
+}
+/* [tiny] */
+.bbc-tiny {
+	font-size: 33%;
+}
+/* [small] */
+.bbc-small {
+	font-size: smaller;
+}
+/* [big] */
+.bbc-big {
+	font-size: larger;
+}
+/* [huge] */
+.bbc-huge {
+	font-size: 333%;
+}
+/* [h] */
+.bbc-h {
+}
+.bbc-h-center {
+	text-align: center;
+}
+.bbc-h:hover:after, .bbc-h-center:hover:after {
+	content: " #"attr(id);
+	color: #AAA;
+	font-size: x-small;
+	font-weight: normal;
+}
+/* [line] */
+.bbc-line {
+	border: 1px solid #000;
+}
+/* [warn] */
+.bbc-warn {
+	margin: 0.25em;
+	padding: 0.25em;
+	color: #FFF;
+	font-weight: bold;
+	border: 2px outset #F00;
+	background-color: #F00;
+}
+
+/* [link] */
+.bbc-link {
+}
+/* [url] */
+.bbc-url {
+	text-decoration: underline !important;
+}
+
+/* [img=] */
+.bbc-img {
+	padding: 1px;
+	border: 1px solid #AAA;
+}
+.bbc-img-inline {
+	display: inline;
+}
+.bbc-img-box {
+	float: left; /* float is cleared by .bbc-img-clearer */
+	margin: 0 0 0.25em 0;
+}
+.bbc-img-left {
+	float: left;
+	margin: 0.25em 0.5em 0.25em 0;
+}
+.bbc-img-center {
+ 	margin: 0 0.25em 0.25em 0.25em;
+ 	text-align: center;
+}
+.bbc-img-right {
+	float: right;
+	margin: 0.25em 0 0.125em 0.25em;
+}
+.bbc-img-desc {
+	margin-top: 0;
+	font-size: smaller;
+	text-align: center;
+}
+.bbc-img-clearer {
+	clear: left;
+}
+
+/* [quote] */
+/* use a margin-bottom when adding background/borders as the line-height margin falls in the box */
+.bbc-quote {
+	color: #555;
+	margin: 0 2em;
+	padding: 0.25em;
+}
+.bbc-quote-author {
+	margin: 0 2em;
+	padding: 0.25em;
+}
+/*
+.bbc-quote:before {
+	content: '" ';
+	font-size: 2em;
+}
+.bbc-quote:after {
+	content: ' "';
+	font-size: 2em;
+}
+*/
+
+/* [code] */
+/* use a margin-bottom when adding background/borders as the line-height margin falls in the box */
+.bbc-code {
+	color: #555;
+	margin: 0 2em 1em;
+	padding: 0.25em;
+	font-family: Lucida Console, monospace;
+	font-size: smaller;
+	border: 1px dashed #AAA;
+}

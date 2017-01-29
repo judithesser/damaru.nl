@@ -1,0 +1,19 @@
+/* cascading style sheet for Noumeno */
+/* copyright Noumeno (Lode, Jaap) */
+
+/* special styles for forms for browsers that support styling forms in a nice way */
+
+fieldset input, fieldset select, fieldset textarea {
+	border: 1px inset #588;
+}
+fieldset select {
+	border-width: 1px;
+}
+fieldset input:hover, fieldset input:focus,
+fieldset select:hover, fieldset select:focus,
+fieldset textarea:hover, fieldset textarea:focus {
+	border-style: solid;
+}
+fieldset input.submit, fieldset input.submit:hover, fieldset input.submit:focus {
+	border-style: outset;
+}

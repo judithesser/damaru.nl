@@ -1,0 +1,260 @@
+/* cascading style sheet for Noumeno */
+/* copyright Noumeno (Lode, Jaap) */
+
+/* basic form styling */
+/* more advanched form styling is in style_forms_noie.css */
+	form fieldset {
+	  padding: 0;
+		border-width: 0;
+	}
+	fieldset.border {
+		padding: 0.5em;
+		width: 410px;
+		border: 2px solid #588;
+	}
+	fieldset.liteborder {
+		padding: 0.5em;
+		width: 410px;
+		border: 1px dotted #AAA;
+	}
+	fieldset.x-small { width: 235px; }
+	fieldset.small { width: 335px; }
+	fieldset.medium { width: 410px; }
+	fieldset.large { width: 560px; }
+	fieldset.x-large { width: 100%; }
+	/* labels */
+	fieldset label {
+		display: block;
+		margin: 0.1em 0;
+		padding: 0.25em 0;
+		font-weight: bold;
+	}
+	fieldset label.xx-short { width: 50px; }
+	fieldset label.x-short { width: 75px; }
+	fieldset label.short { width: 125px; }
+	fieldset label.lite {
+		font-weight: normal;
+	}
+	fieldset label.indent {
+	  margin-left: 25px;
+	}
+	/* input-fields */
+	fieldset input {
+		display: block;
+		margin: 0.1em 0 1em;
+		padding: 0.25em;
+		width: 200px;
+	}
+	fieldset input.x-short { width: 100px; }
+	fieldset input.short { width: 125px; }
+	fieldset input.long { width: 350px; }
+	fieldset input.check { width: auto;	}
+	fieldset input.radio { width: auto;	}
+	fieldset input.hidden {
+	  display: none;
+	}
+	fieldset input.submit {
+	  padding: 0.25em 0.5em;
+		width: auto;
+	}
+	fieldset input.submit-short { padding: 0.1em 0.5em; }
+	fieldset input.multi {
+	  float: left;
+	  margin-right: 1em;
+	}
+	/* select-fields */
+	fieldset select {
+		display: block;
+		margin: 0.1em 0 1em;
+		padding: 0.1em;
+		width: 208px;
+	}
+	fieldset select option {
+		padding: 0.1em 0.25em;
+	}
+	fieldset select.short { width: 133px; }
+	fieldset select.long { width: 358px; }
+	/* textareas */
+	fieldset textarea {
+		display: block;
+		margin: 0.1em 0 1em;
+		padding: 0.25em;
+	  font-family: Verdana, sans-serif, helvetica;
+	  font-size: inherit;
+		border: 1px solid #AAA;
+	}
+	fieldset textarea.small {
+	  width: 200px;
+	  height: 75px;
+	}
+	fieldset textarea.medium {
+	  width: 350px;
+	  height: 150px;
+	}
+	fieldset textarea.large {
+	  width: 100%; /* was 500px */
+	  height: 250px;
+	}
+	/* other elements */
+	fieldset p.explain {
+		font-size: 85%;
+	}
+	fieldset h1, fieldset h2, fieldset h3, fieldset h4, fieldset h5, fieldset h6 {
+		margin: 0.25em 0;
+		padding: 0.25em;
+		border-bottom: 2px solid #588;
+	}
+	fieldset .icon {
+	  float: left;
+	  margin: 0.5em;
+	}
+	fieldset br {
+		clear: left;
+	}
+
+/* some changes for table-like forms */
+/* IE fix for wrong margins for select and textarea is in style_ie.css */
+	fieldset.table label, fieldset label.table {
+		display: inline;
+		float: left;
+		margin-top: 0.25em;
+		width: 200px;
+	}
+	fieldset.table label.untable {
+		display: block;
+		float: none;
+		margin-top: 0.1em;
+		width: auto;
+	}
+	fieldset.table label.xx-short { width: 50px; }
+	fieldset.table label.x-short { width: 75px; }
+	fieldset.table label.short { width: 125px; }
+	fieldset.table label.check, fieldset.table label.radio {
+		padding: 0 0;
+	}
+	fieldset.table input, fieldset input.table {
+		display: inline;
+		float: left;
+		margin: 0.25em 0 0;
+	}
+	fieldset.table input.untable {
+		display: block;
+		float: none;
+		margin: 0.1em 0 1em;
+	}
+	fieldset.table input.hidden {
+	  display: none;
+	}
+	fieldset.table input.submit { margin-left: 200px; }
+	fieldset.table input.submit-shortlabel { margin-left: 100px; }
+	fieldset.table input.submit-untable { margin-left: 0; }
+	fieldset.table select, fieldset select.table {
+		display: inline;
+		float: left;
+		margin: 0.25em 0 0;
+	}
+	fieldset.table select.untable {
+		display: block;
+		float: none;
+		margin: 0.1em 0 1em;
+	}
+	fieldset.table textarea, fieldset textarea.table {
+		display: inline;
+		margin: 0.25em 0 0;
+	}
+	fieldset.table textarea.untable {
+		display: block;
+		margin: 0.1em 0 1em;
+	}
+	fieldset.table p.explain {
+		margin-left: 200px;
+	}
+	fieldset.table p.explain.untable {
+		margin-left: 0;
+	}
+	fieldset.table h1, fieldset.table h2, fieldset.table h3, fieldset.table h4, fieldset.table h5, fieldset.table h6,
+	fieldset h1.table, fieldset h2.table, fieldset h3.table, fieldset h4.table, fieldset h5.table, fieldset h6.table {
+		border-bottom: 2px solid #588;
+	}
+	
+/* some changes for forms in very small spaces, little blocks */
+/* THIS SHOULD BE WORKED OUT MORE.. */
+	fieldset.block {
+	  width: auto;
+	}
+	/* input */
+	fieldset.block input {
+		margin-bottom: 0.25em;
+		width: 190px;
+	}
+		fieldset.block input.x-short { width: 100px; }
+		fieldset.block input.short { width: 125px; }
+		fieldset.block input.check, fieldset.block input.radio { width: auto; }
+		fieldset.block input.submit {
+			margin-bottom: 0.1em;
+			width: auto;
+		}
+	/* select */
+	fieldset.block select {
+		margin-bottom: 0.25em;
+		width: 198px;
+	}
+		fieldset.block select.x-short { width: 108px; }
+		fieldset.block select.short { width: 132px; }
+	/* textarea */
+	fieldset.block textarea {
+		margin-bottom: 0.25em;
+	  width: 190px;
+	  height: 40px;
+	}
+	fieldset.block textarea.small { height: 27px; }
+	fieldset.block textarea.medium { height: 75px; }
+	fieldset.block textarea.large { height: 175px; }
+	/* combinations of block and table */
+	fieldset.block label.table {
+	  display: inline;
+		float: left;
+		margin-right: 1em;
+		width: auto;
+	}
+	fieldset.block input.table {
+	  display: inline;
+		float: right;
+		margin-bottom: 0.25em;
+	}
+	fieldset.block select.table {
+	  display: inline;
+		float: right;
+		margin-bottom: 0.25em;
+	}
+	/* others */
+	fieldset.block br {
+	  clear: both;
+	}
+
+/* colored borders for required and optional fields */
+/* and fixes for the width because of the fat borders (doesn't work in IE) */
+/* in IE the colors don't work for the select-field */
+	fieldset.required input, fieldset.required select, fieldset.required textarea,
+	fieldset input.required, fieldset select.required, fieldset textarea.required {
+		border: 1px solid #A00;
+		border-left: 5px solid #A00;
+	}
+	fieldset.required input, fieldset input.required { width: 196px; }
+	fieldset.required input.short, fieldset input.required.short { width: 121px; }
+	fieldset.required input.long, fieldset input.required.long { width: 346px; }
+	fieldset.required textarea.small, fieldset textarea.required.small { width: 196px; }
+	fieldset.required textarea.medium, fieldset textarea.required.medium { width: 346px; }
+	fieldset.required textarea.large, fieldset textarea.required.large { /* normal width = 100%. */ }
+	/* optional fields */
+	fieldset.optional input, fieldset.optional select, fieldset.optional textarea,
+	fieldset input.optional, fieldset select.optional, fieldset textarea.optional {
+		border: 1px solid #588;
+		border-left: 5px solid #588;
+	}
+	fieldset.optional input, fieldset input.optional { width: 196px; }
+	fieldset.optional input.short, fieldset input.optional.short { width: 121px; }
+	fieldset.optional input.long, fieldset input.optional.long { width: 346px; }
+	fieldset.optional textarea.small, fieldset textarea.optional.small { width: 196px; }
+	fieldset.optional textarea.medium, fieldset textarea.optional.medium { width: 346px; }
+	fieldset.optional textarea.large, fieldset textarea.optional.large { /* normal width = 100%. */ }

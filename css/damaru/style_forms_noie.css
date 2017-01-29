@@ -1,0 +1,24 @@
+/* cascading style sheet for vuurplaats */
+/* copyright Vuurplaats (Lode), 2006-2007 */
+
+/* special styles for forms for browsers that support styling forms in a nice way */
+
+/* add some colors for forms */
+/*
+fieldset input, fieldset select, fieldset textarea {
+	border-color: #AAA;
+}
+fieldset input:hover, fieldset input:focus,
+fieldset select:hover, fieldset select:focus,
+fieldset textarea:hover, fieldset textarea:focus {
+	border-color: #28F;
+}
+#right fieldset input:hover, #right fieldset input:focus,
+#right fieldset select:hover, #right fieldset select:focus,
+#right fieldset textarea:hover, #right fieldset textarea:focus {
+	border-color: #F82;
+}
+fieldset input.submit, fieldset input.submit:hover, fieldset input.submit:focus {
+	border-color: #AAA;
+}
+*/
